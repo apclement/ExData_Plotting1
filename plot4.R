@@ -3,7 +3,7 @@ source('dataloader.R')
 with(data, {
 
 # 2x2 grid
-par(mfrow = c(2, 2))
+par(mfrow = c(2, 2), mar = c(4, 4, 2, 1), oma = c(0, 0, 2, 0))
 
 # plot 1
 plot(Global_active_power ~ DateTime, type = 'l', xlab = '', ylab = "Global Active Power")
